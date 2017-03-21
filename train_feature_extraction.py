@@ -30,8 +30,8 @@ with open("train.p", mode='rb') as f:
     train = pickle.load(f)
 X, Y = train['features'], train['labels']
 
-X = X[0:200, :, :, :]
-Y = Y[0:200]
+#X = X[0:200, :, :, :]
+#Y = Y[0:200]
 
 # TODO: Split data into training and validation sets.
 X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=.25, random_state=11)
